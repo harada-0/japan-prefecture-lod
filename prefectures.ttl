@@ -1,0 +1,31 @@
+@prefix : <http://example.org/japan#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Tokyo a :Prefecture ;
+    :name "東京都" ;
+    :population "14000000"^^xsd:integer ;
+    :area "2194.0"^^xsd:decimal ;
+    :region :Kanto ;
+    :capital "新宿区" .
+:Osaka a :Prefecture ;
+    :name "大阪府" ;
+    :population "8800000"^^xsd:integer ;
+    :area "1905.0"^^xsd:decimal ;
+    :region :Kinki ;
+    :capital "大阪市" .
+
+:Hokkaido a :Prefecture ;
+    :name "北海道" ;
+    :population "5300000"^^xsd:integer ;
+    :area "83424.0"^^xsd:decimal ;
+    :region :HokkaidoRegion ;
+    :capital "札幌市" .
+
+:Kanto a :Region ;
+    :regionName "関東" .
+
+:Kinki a :Region ;
+    :regionName "近畿" .
+
+:HokkaidoRegion a :Region ;
+    :regionName "北海道" .
